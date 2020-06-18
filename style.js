@@ -27,6 +27,7 @@ function getDetails(){
         var data=JSON.parse(this.response)
      console.log(data)
      console.log(data.restaurants)
+     window.localStorage.setItem("data", this.response);
   var length=data.restaurants
   for(var i=0;i<length.length;i++)
   {
@@ -48,7 +49,7 @@ function display(name,location,phone){
    var button=document.createElement("button")
    var phoneNum=document.createElement("h4")
    button.textContent="get more details"
-   locationres.textContent=location
+   locationres.textContent="📌"+location
     h4.textContent=name
   phoneNum.textContent="📞"+phone
     res.append(h4)
@@ -57,6 +58,12 @@ function display(name,location,phone){
 res.setAttribute("class","box")
  
     profile.appendChild(res)
+    renderDom(button)
+}
+function renderDom(button){
+    button.addEventListener("click",turnNextPage)
+    function turnNextPage(){
+        window.location.assign("./res.html")
+    }
 
-    
 }
