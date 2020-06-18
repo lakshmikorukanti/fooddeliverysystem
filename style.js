@@ -30,20 +30,33 @@ function getDetails(){
   var length=data.restaurants
   for(var i=0;i<length.length;i++)
   {
-      var name=data.restaurants[i].restaurant.location
-      console.log(name)
-      display(name)
+      var name=data.restaurants[i].restaurant.name
+      var location=data.restaurants[i].restaurant.location.address
+      var phone=data.restaurants[i].restaurant.phone_numbers
+      //console.log(name)
+      display(name,location,phone)
   }
   
     }
 
 }
-function display(value){
+function display(name,location,phone){
     var profile=document.getElementById("profile")
     var res=document.createElement("div")
     var h4=document.createElement("h4")
-    h4.textContent=value.address
-   res.append(h4)
+   var locationres=document.createElement("h4")
+   var button=document.createElement("button")
+   var phoneNum=document.createElement("h4")
+   button.textContent="get more details"
+   locationres.textContent=location
+    h4.textContent=name
+  phoneNum.textContent="📞"+phone
+    res.append(h4)
+    res.append(locationres,phoneNum)
+    res.append(button)
+res.setAttribute("class","box")
+ 
     profile.appendChild(res)
+
     
 }
