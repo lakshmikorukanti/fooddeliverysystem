@@ -1,3 +1,74 @@
 .zomato{
     margin-left: 10px;
 }
+#profile
+{
+    min-height: 600px;
+    min-width: 700px;
+    color: white;
+    text-align: center;
+    background-image: url(https://sifu.unileversolutions.com/image/en-LK/recipe-topvisual/2/1260-709/authentic-chicken-biryani-50434132.jpg);
+}
+input{
+    height: 30px;
+    width: 300px;
+   
+   
+}
+.res{
+   
+    width: 220px;
+   
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    margin-top: 30px;
+    font-size: x-large;
+    border-radius: 15px;
+}
+#inputState{
+width:200px;
+height: 40px;
+}
+select{
+    width: 200px;
+    height: 40px;
+}
+.box{
+    border: 1px solid black;
+    background: white;
+    color: teal;
+    float: left;
+    width: 100%;
+}
+#location_name{
+    color: white;
+    margin-top: 5px;
+}
+#res_name{
+    color: white;
+    margin-top: 5px;
+}
+#zone_name{
+    color: black;
+    margin-top: 5px;
+}
+#sort_name{
+    color: black;
+    margin-top: 5px;
+}
+#order_name{
+    color: black;
+}
+.displayul{
+    width:500px;
+    text-align: center;
+
+}
+#cart{
+    text-align: center;
+}

@@ -61,21 +61,21 @@
             <form>
               <div class="form-row">
                 <div class="col">
-                  <label><h4>Location:</h4>
+                  <label class="location_name"><h1>Location:</h1>
                   <input type="text" class="form-control" id="location" placeholder="enter the location">
                 </label>
                 </div>
                 <div class="col">
-                  <label><h4>Restaurant Name:</h4>
+                  <label class="res_name"><h1>Restaurant Name:</h1>
                   <input type="text" class="form-control res" id="restaurant" placeholder="enter the restaurant name">
                     </label>
                 </div>
               </div>
             </form>
             <form>
-             <label><h4>Zone:</h4>
+             <label id="zone_name"><h1>Zone:</h1>
                <select id="choose_zone">
-                 <option></option>
+               
                  <option value="city">City</option>
                  <option value="subzone">Subzone</option>
                  <option value="zone">Zone</option>
@@ -85,17 +85,17 @@
 
                </select>
               </label>
-              <label><h4>Sort:</h4>
+              <label id="sort_name"><h1>Sort:</h1>
                <select id="choose_sort">
-                 <option></option>
+                
                 <option value="cost">Cost</option>
                 <option value="rating">Rating</option>
                 <option value="real_distance">Real_Distance</option>
                </select>
               </label>
-              <label><h4>Order:</h4>
+              <label id="order_name"><h1>Order:</h1>
               <select id="choose_order">
-                <option></option>
+                
                 <option value="asc">Ascending order</option>
                 <option value="desc">Descending order</option>
               </select>
@@ -106,7 +106,26 @@
             <button id="search">Search</button>
           </div>
         </div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="card" id="cart" style="border: 1px solid black;">
+            <div class="card ml-5 p-5">
+            <h4>Delivery location</h4>
+            <label>HoseNo:
+            <input type="text" id="house_no" placeholder="please enter the houseno"></label></br>
+            <label>Landmark:
+            <input type="text" id="mark" placeholder="please enter the landmark"></label></br>
+            <label>Street:
+            <input type="text" id="street" placeholder="please enter the street"></label></br>
+            <label>city:
+            <input type="text" id="city" placeholder="please enter the city"></label></br>
+            <label>State:
+            <input type="text" id="state" placeholder="please enter the state"></label></br>
+            <button id="add">Add address</button>
+            <div id="display_address"></div>
+            <button id="cartitems">Add cart items</button>
+            </div>
+          </div>
+        </div>
       </div>
   
   <script  type="text/javascript" src="style.js"></script>
